@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "dev": "webpack --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "server:w": "nodemon ./server/index.js"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +22,7 @@
     "express": "^4.16.3",
     "hbs": "^4.0.1",
     "jest": "^22.3.0",
+    "nodemon": "^1.17.5",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
