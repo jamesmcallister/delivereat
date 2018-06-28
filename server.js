@@ -21,6 +21,9 @@ app.get("/", function(req, res) {
 app.get("/menu", (req, res) => {
   res.json(menu);
 });
+app.get("/menuItem/:id", (req, res) => {
+  res.json(menu[req.params.id]);
+});
 
 app.listen(8080, function() {
   console.log("Listening on port 8080");
